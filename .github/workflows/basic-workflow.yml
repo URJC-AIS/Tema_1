@@ -5,7 +5,7 @@ on:
 
 jobs:
   
-  tema-1:
+  tema-1_2:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
@@ -15,3 +15,63 @@ jobs:
           java-version: 11
       - name: Tema 1_2_ejem0
         run: cd Tema_1_2/tema1_2_ejem0/ && mvn clean test
+      - name: Tema 1_2_ejem1
+        run: cd Tema_1_2/tema1_2_ejem1/ && mvn clean test
+      - name: tema1_2_ejem2_assertj
+        run: cd Tema_1_2/tema1_2_ejem2_assertj/ && mvn clean test
+      - name: tema1_2_ejem3_mockito
+        run: cd Tema_1_2/tema1_2_ejem3_mockito/ && mvn clean test
+      - name: tema1_2_ejem4_mockito
+        run: cd Tema_1_2/tema1_2_ejem4_mockito/ && mvn clean test
+      - name: tema1_2_ejer1
+        run: cd Tema_1_2/tema1_2_ejer1/ && mvn clean test
+      - name: tema1_2_ejer2
+        run: cd Tema_1_2/tema1_2_ejer2/ && mvn clean test
+      - name: tema1_2_ejer3
+        run: cd Tema_1_2/tema1_2_ejer3/ && mvn clean test
+      - name: tema1_2_ejer4
+        run: cd Tema_1_2/tema1_2_ejer4/ && mvn clean test
+      - name: tema1_2_ejer5
+        run: cd Tema_1_2/tema1_2_ejer5/ && mvn clean test
+      - name: tema1_2_ejer6
+        run: cd Tema_1_2/tema1_2_ejer6/ && mvn clean test
+      - name: tema1_2_ejer7
+        run: cd Tema_1_2/tema1_2_ejer7/ && mvn clean test
+      - name: tema1_2_ejer8
+        run: cd Tema_1_2/tema1_2_ejer8/ && mvn clean test
+      - name: tema1_2_ejer9
+        run: cd Tema_1_2/tema1_2_ejer9/ && mvn clean test
+      - name: tema1_2_ejer9-solucion
+        run: cd Tema_1_2/tema1_2_ejer9-solucion/ && mvn clean test
+
+  tema-1_4:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK 11
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
+      - name: selenium_ejem1
+        run: cd Tema_1_4/selenium_ejem1/ && mvn clean test
+      - name: selenium_ejem2
+        run: cd Tema_1_4/selenium_ejem2/ && mvn clean test
+      - name: selenium_ejer1
+        run: cd Tema_1_4/selenium_ejer1/ && mvn clean test
+      - name: selenium_ejer1_enunciado
+        run: cd Tema_1_4/selenium_ejer1_enunciado/ && mvn clean test
+
+  tema-1_6:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK 11
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
+      - name: rest_test_ejem1
+        run: cd Tema_1_2/rest_test_ejem1/ && mvn clean test
+      - name: rest_test_ejem2
+        run: cd Tema_1_2/rest_test_ejem2/ && mvn clean test
+      - name: rest_test_ejer1
+        run: cd Tema_1_2/rest_test_ejer1/ && mvn clean test
