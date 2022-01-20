@@ -15,8 +15,8 @@ jobs:
           java-version: 11
       - name: Tema 1_2_ejem0
         run: cd Tema_1_2/tema1_2_ejem0/ && mvn clean test
-      - name: Tema 1_2_ejem1
-        run: cd Tema_1_2/tema1_2_ejem1/ && mvn clean test
+      # - name: Tema 1_2_ejem1
+      #   run: cd Tema_1_2/tema1_2_ejem1/ && mvn clean test
       - name: tema1_2_ejem2_assertj
         run: cd Tema_1_2/tema1_2_ejem2_assertj/ && mvn clean test
       - name: tema1_2_ejem3_mockito
@@ -44,22 +44,22 @@ jobs:
       - name: tema1_2_ejer9-solucion
         run: cd Tema_1_2/tema1_2_ejer9-solucion/ && mvn clean test
 
-  tema-1_4:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set up JDK 11
-        uses: actions/setup-java@v1
-        with:
-          java-version: 11
-      - name: selenium_ejem1
-        run: cd Tema_1_4/selenium_ejem1/ && mvn clean test
-      - name: selenium_ejem2
-        run: cd Tema_1_4/selenium_ejem2/ && mvn clean test
-      - name: selenium_ejer1
-        run: cd Tema_1_4/selenium_ejer1/ && mvn clean test
-      - name: selenium_ejer1_enunciado
-        run: cd Tema_1_4/selenium_ejer1_enunciado/ && mvn clean test
+  # tema-1_4:
+  #   runs-on: ubuntu-20.04
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - name: Set up JDK 11
+  #       uses: actions/setup-java@v1
+  #       with:
+  #         java-version: 11
+  #     - name: selenium_ejem1
+  #       run: cd Tema_1_4/selenium_ejem1/ && mvn clean test
+  #     - name: selenium_ejem2
+  #       run: cd Tema_1_4/selenium_ejem2/ && mvn clean test
+  #     - name: selenium_ejer1
+  #       run: cd Tema_1_4/selenium_ejer1/ && mvn clean test
+  #     - name: selenium_ejer1_enunciado
+  #       run: cd Tema_1_4/selenium_ejer1_enunciado/ && mvn clean test
 
   tema-1_6:
     runs-on: ubuntu-20.04
@@ -70,8 +70,8 @@ jobs:
         with:
           java-version: 11
       - name: rest_test_ejem1
-        run: cd Tema_1_2/rest_test_ejem1/ && mvn clean test
+        run: cd Tema_1_6/rest_test_ejem1/ && mvn clean test
       - name: rest_test_ejem2
-        run: cd Tema_1_2/rest_test_ejem2/ && mvn clean test
+        run: cd Tema_1_6/rest_test_ejem2/ && mvn clean test
       - name: rest_test_ejer1
-        run: cd Tema_1_2/rest_test_ejer1/ && mvn clean test
+        run: cd Tema_1_6/rest_test_ejer1/ && mvn clean test
