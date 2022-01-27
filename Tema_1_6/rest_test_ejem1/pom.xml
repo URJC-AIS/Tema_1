@@ -10,7 +10,7 @@
 		<java.version>17</java.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
     	<maven.compiler.target>${java.version}</maven.compiler.target>
-		<junit.jupiter.version>5.7.0</junit.jupiter.version>
+		<junit.jupiter.version>5.8.2</junit.jupiter.version>
 	</properties>
 
 	<dependencies>
@@ -23,7 +23,7 @@
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
-			<version>3.3.0</version>
+			<version>4.5.0</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>

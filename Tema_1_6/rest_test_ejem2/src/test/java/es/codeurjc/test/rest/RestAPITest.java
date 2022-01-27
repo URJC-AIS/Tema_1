@@ -107,7 +107,7 @@ public class RestAPITest {
     		// [ 1, 2, 3 ]
     		.body(
     			"id", hasItems(id1, id2),
-    			"description", hasItems("Leche", "Huevos")
+    			"description", hasItems("Leche", "Pan")
 			);
     	 
     }
