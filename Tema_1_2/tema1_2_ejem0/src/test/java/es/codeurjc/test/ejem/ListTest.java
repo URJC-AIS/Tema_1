@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 public class ListTest {
 	
 	@Test
-	public void testSuma() {
+	public void testAdd() {
 		
 		//Given
 		List<String> list = new ArrayList<>();
