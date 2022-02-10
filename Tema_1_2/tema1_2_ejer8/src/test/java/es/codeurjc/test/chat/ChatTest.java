@@ -12,16 +12,18 @@ public class ChatTest {
 
 	@Test
 	public void addUser() {
-
+		
+		// GIVEN
 		Chat chat = new Chat("Test");
 		User user1 = mock(User.class);
 		User user2 = mock(User.class);
-
 		when(user2.getName()).thenReturn("Pepe");
-
+		
+		// WHEN 
 		chat.addUser(user1);
 		chat.addUser(user2);
-
+		
+		// THEN
 		verify(user1).newUserInChat("Test", "Pepe");
 	}
 
