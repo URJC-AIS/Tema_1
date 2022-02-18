@@ -44,11 +44,18 @@ public class WikipediaTest {
 		driver.get("https://wikipedia.org");
 				
 		WebElement searchInput = driver.findElement(By.name("search"));
+		
+		Thread.sleep(5000);	
 
 		searchInput.sendKeys("Rick Astley");
+		
+		Thread.sleep(5000);	
+		
 		searchInput.submit();
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		
+		Thread.sleep(5000);	
 					
 		WebElement text = wait.until(
 			presenceOfElementLocated(By.id("mw-content-text")));
