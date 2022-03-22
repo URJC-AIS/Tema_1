@@ -18,6 +18,6 @@ public class GoogleBooksAPITest {
 	     get("https://www.googleapis.com/books/v1/volumes").
 	  then().
 	     statusCode(200).
-	     body("items.volumeInfo.title", hasItems(containsString(("Javascript"))));
+	     body("items.volumeInfo.title", hasItems(containsString(("JavaScript"))));
 	}
 }
