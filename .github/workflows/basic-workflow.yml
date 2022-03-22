@@ -9,40 +9,41 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-      - name: Set up JDK 11
-        uses: actions/setup-java@v1
+      - name: Set up JDK 17
+        uses: actions/setup-java@v2
         with:
-          java-version: 17
+          distribution: 'adopt'
+          java-version: '17'
       - name: Tema 1_2_ejem0
-        run: cd Tema_1_2/tema1_2_ejem0/ && mvn clean test
+        run: mvn -B test --file Tema_1_2/tema1_2_ejem0/pom.xml
       # - name: Tema 1_2_ejem1
-      #   run: cd Tema_1_2/tema1_2_ejem1/ && mvn clean test
+      #   run: mvn -B test --file Tema_1_2/tema1_2_ejem1/
       # - name: tema1_2_ejem2_assertj
-      #   run: cd Tema_1_2/tema1_2_ejem2_assertj/ && mvn clean test
+      #   run: mvn -B test --file Tema_1_2/tema1_2_ejem2_assertj/
       - name: tema1_2_ejem3_mockito
-        run: cd Tema_1_2/tema1_2_ejem3_mockito/ && mvn clean test
+        run: mvn -B test --file Tema_1_2/tema1_2_ejem3_mockito/pom.xml
       - name: tema1_2_ejem4_mockito
-        run: cd Tema_1_2/tema1_2_ejem4_mockito/ && mvn clean test
+        run: mvn -B test --file Tema_1_2/tema1_2_ejem4_mockito/pom.xml
       - name: tema1_2_ejer1
-        run: cd Tema_1_2/tema1_2_ejer1/ && mvn clean test
+        run: mvn -B test --file Tema_1_2/tema1_2_ejer1/pom.xml
       - name: tema1_2_ejer2
-        run: cd Tema_1_2/tema1_2_ejer2/ && mvn clean test
+        run: mvn -B test --file Tema_1_2/tema1_2_ejer2/pom.xml
       - name: tema1_2_ejer3
-        run: cd Tema_1_2/tema1_2_ejer3/ && mvn clean test
+        run: mvn -B test --file Tema_1_2/tema1_2_ejer3/pom.xml
       - name: tema1_2_ejer4
-        run: cd Tema_1_2/tema1_2_ejer4/ && mvn clean test
+        run: mvn -B test --file Tema_1_2/tema1_2_ejer4/pom.xml
       - name: tema1_2_ejer5
-        run: cd Tema_1_2/tema1_2_ejer5/ && mvn clean test
+        run: mvn -B test --file Tema_1_2/tema1_2_ejer5/pom.xml
       - name: tema1_2_ejer6
-        run: cd Tema_1_2/tema1_2_ejer6/ && mvn clean test
+        run: mvn -B test --file Tema_1_2/tema1_2_ejer6/pom.xml
       - name: tema1_2_ejer7
-        run: cd Tema_1_2/tema1_2_ejer7/ && mvn clean test
+        run: mvn -B test --file Tema_1_2/tema1_2_ejer7/pom.xml
       - name: tema1_2_ejer8
-        run: cd Tema_1_2/tema1_2_ejer8/ && mvn clean test
+        run: mvn -B test --file Tema_1_2/tema1_2_ejer8/pom.xml
       - name: tema1_2_ejer9
-        run: cd Tema_1_2/tema1_2_ejer9/ && mvn clean test
+        run: mvn -B test --file Tema_1_2/tema1_2_ejer9/pom.xml
       - name: tema1_2_ejer9-solucion
-        run: cd Tema_1_2/tema1_2_ejer9-solucion/ && mvn clean test
+        run: mvn -B test --file Tema_1_2/tema1_2_ejer9-solucion/pom.xml
 
   # tema-1_4:
   #   runs-on: ubuntu-20.04
@@ -53,25 +54,26 @@ jobs:
   #       with:
   #         java-version: 11
   #     - name: selenium_ejem1
-  #       run: cd Tema_1_4/selenium_ejem1/ && mvn clean test
+  #       run: mvn -B test --file Tema_1_4/selenium_ejem1/
   #     - name: selenium_ejem2
-  #       run: cd Tema_1_4/selenium_ejem2/ && mvn clean test
+  #       run: mvn -B test --file Tema_1_4/selenium_ejem2/
   #     - name: selenium_ejer1
-  #       run: cd Tema_1_4/selenium_ejer1/ && mvn clean test
+  #       run: mvn -B test --file Tema_1_4/selenium_ejer1/
   #     - name: selenium_ejer1_enunciado
-  #       run: cd Tema_1_4/selenium_ejer1_enunciado/ && mvn clean test
+  #       run: mvn -B test --file Tema_1_4/selenium_ejer1_enunciado/
 
   tema-1_6:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-      - name: Set up JDK 11
-        uses: actions/setup-java@v1
+      - name: Set up JDK 17
+        uses: actions/setup-java@v2
         with:
-          java-version: 11
+          distribution: 'adopt'
+          java-version: '17'
       - name: rest_test_ejem1
-        run: cd Tema_1_6/rest_test_ejem1/ && mvn clean test
+        run: mvn -B test --file Tema_1_6/rest_test_ejem1/pom.xml
       - name: rest_test_ejem2
-        run: cd Tema_1_6/rest_test_ejem2/ && mvn clean test
+        run: mvn -B test --file Tema_1_6/rest_test_ejem2/pom.xml
       - name: rest_test_ejer1
-        run: cd Tema_1_6/rest_test_ejer1/ && mvn clean test
+        run: mvn -B test --file Tema_1_6/rest_test_ejer1/pom.xml
