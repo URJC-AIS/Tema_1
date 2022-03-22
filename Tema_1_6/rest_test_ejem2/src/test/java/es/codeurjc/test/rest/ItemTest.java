@@ -33,13 +33,13 @@ public class ItemTest {
     	
         given().
             request()
-                .body("{ \"description\" : \"Milk\", \"checked\": false }")
+                .body("{ \"description\" : \"milk\", \"checked\": false }")
                 .contentType(ContentType.JSON).
         when().
              post("/items/").
 		then().
 		     statusCode(201).
-		     body("description", equalTo("Milk"));
+		     body("description", equalTo("milk"));
         
     }
     
@@ -59,7 +59,7 @@ public class ItemTest {
              post("/items/").
 		then().
 		     statusCode(201).
-		     body("description", equalTo("Milk"));
+		     body("description", equalTo("milk"));
         
     }
     
