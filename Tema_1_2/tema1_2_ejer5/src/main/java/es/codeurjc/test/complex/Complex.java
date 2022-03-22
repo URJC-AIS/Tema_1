@@ -39,6 +39,9 @@ public class Complex {
 	// return a new Complex object whose value is the reciprocal of this
 	public Complex reciprocal() {
 		double scale = pow(this.realPart, 2.0) + pow(this.imaginaryPart, 2.0);
+		if(scale == 0.0){
+			throw new ArithmeticException("division by zero");
+		}
 		return new Complex(this.realPart / scale, this.imaginaryPart / scale);
 	}
 
