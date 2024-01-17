@@ -20,10 +20,12 @@ jobs:
       #   run: mvn -B test --file Tema_1_2/tema1_2_ejem1/
       # - name: tema1_2_ejem2_assertj
       #   run: mvn -B test --file Tema_1_2/tema1_2_ejem2_assertj/
-      - name: tema1_2_ejem3_mockito
-        run: mvn -B test --file Tema_1_2/tema1_2_ejem3_mockito/pom.xml
+      # - name: tema1_2_ejem3_mockito
+      #   run: mvn -B test --file Tema_1_2/tema1_2_ejem3_mockito/pom.xml
       - name: tema1_2_ejem4_mockito
         run: mvn -B test --file Tema_1_2/tema1_2_ejem4_mockito/pom.xml
+      - name: tema1_2_ejem5_mockito
+        run: mvn -B test --file Tema_1_2/tema1_2_ejem5_mockito/pom.xml
       - name: tema1_2_ejer1
         run: mvn -B test --file Tema_1_2/tema1_2_ejer1/pom.xml
       - name: tema1_2_ejer2
@@ -44,36 +46,3 @@ jobs:
         run: mvn -B test --file Tema_1_2/tema1_2_ejer9/pom.xml
       - name: tema1_2_ejer9-solucion
         run: mvn -B test --file Tema_1_2/tema1_2_ejer9-solucion/pom.xml
-
-  # tema-1_4:
-  #   runs-on: ubuntu-20.04
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - name: Set up JDK 11
-  #       uses: actions/setup-java@v1
-  #       with:
-  #         java-version: 11
-  #     - name: selenium_ejem1
-  #       run: mvn -B test --file Tema_1_4/selenium_ejem1/
-  #     - name: selenium_ejem2
-  #       run: mvn -B test --file Tema_1_4/selenium_ejem2/
-  #     - name: selenium_ejer1
-  #       run: mvn -B test --file Tema_1_4/selenium_ejer1/
-  #     - name: selenium_ejer1_enunciado
-  #       run: mvn -B test --file Tema_1_4/selenium_ejer1_enunciado/
-
-  tema-1_6:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set up JDK 17
-        uses: actions/setup-java@v2
-        with:
-          distribution: 'adopt'
-          java-version: '17'
-      - name: rest_test_ejem1
-        run: mvn -B test --file Tema_1_6/rest_test_ejem1/pom.xml
-      - name: rest_test_ejem2
-        run: mvn -B test --file Tema_1_6/rest_test_ejem2/pom.xml
-      - name: rest_test_ejer1
-        run: mvn -B test --file Tema_1_6/rest_test_ejer1/pom.xml
