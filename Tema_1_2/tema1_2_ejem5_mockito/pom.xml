@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>es.codeurjc.test</groupId>
-	<artifactId>tema1_2-ejem2-assertj</artifactId>
+	<artifactId>tema1_2-ejem5-mockito</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -25,6 +25,12 @@
 			<groupId>org.assertj</groupId>
 			<artifactId>assertj-core</artifactId>
 			<version>3.25.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>5.9.0</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
